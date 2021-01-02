@@ -1,0 +1,32 @@
+@import "./reset.css";
+.taiwan12flower {
+  background: #e4dcd5;
+  min-height: 100vh;
+  padding: 40px 30px 0 30px;
+}
+.taiwan12.title {
+  font-size: 32px;
+  font-weight: 300;
+  padding-bottom: 40px;
+}
+.taiwan12.tabs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.taiwan12.tab-toggle {
+  width: calc((100% - 20px) / 3);
+  cursor: none;
+}
+.taiwan12.flower-tab {
+  font-size: 16px;
+  width: 100%;
+  //   width: calc((100% - 20px) / 3);
+  height: 50px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #000;
+  margin-bottom: 20px;
+}
