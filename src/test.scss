@@ -1,13 +1,50 @@
-@import "./reset.css";
-.taiwan12flower {
-  background: #e4dcd5;
-  min-height: 100vh;
-  padding: 40px 30px 0 30px;
+@import './reset.css';
+body {
+  width: 100vw;
+  font-family: 'Noto Sans TC', sans-serif;
+  color: #fff;
 }
+p {
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.en-style {
+  font-family: 'MuseoModerno', cursive, 'Noto Sans TC', sans-serif;
+}
+.taiwan12flower {
+  background: #69716e;
+  min-height: 100vh;
+  // min-height: 150vh;
+  padding: 40px 30px;
+  &.modal > .taiwan12.title {
+    border-bottom: solid 1px #69716e;
+  }
+}
+
+// @media screen and (min-width: 321px) {
+//   .taiwan12flower.modal {
+//     min-height: 130vh;
+//   }
+// }
+// @media screen and (min-width: 376px) {
+//   .taiwan12flower.modal {
+//     min-height: 110vh;
+//   }
+// }
+// @media screen and (min-width: 768px) {
+//   .taiwan12flower.modal {
+//     min-height: 100vh;
+//   }
+// }
 .taiwan12.title {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
   font-size: 32px;
   font-weight: 300;
-  padding-bottom: 40px;
+  padding: 0 0 23px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #fff;
 }
 .taiwan12.tabs {
   display: flex;
@@ -16,17 +53,110 @@
 }
 .taiwan12.tab-toggle {
   width: calc((100% - 20px) / 3);
-  cursor: none;
+  cursor: auto;
+}
+@media screen and (max-width: 360px) {
+  .taiwan12.tab-toggle {
+    width: calc((100% - 10px) / 2);
+  }
 }
 .taiwan12.flower-tab {
   font-size: 16px;
   width: 100%;
-  //   width: calc((100% - 20px) / 3);
   height: 50px;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 1px #000;
+  border: solid 1px #fff;
   margin-bottom: 20px;
+}
+.taiwan12.flower-no {
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 5px;
+  font-weight: bolder;
+}
+.taiwan12.flower-name {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 16px;
+  letter-spacing: 15px;
+  text-indent: 15px;
+}
+// .taiwan12.taiwan-12-swiper-container {
+//   animation-name: room-in;
+//   animation-duration: 0.3s;
+//   animation-fill-mode: forwards;
+// }
+.taiwan12.taiwan-12-swiper {
+  height: 280px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // background: url('%PUBLIC_URL%/logo192.png');
+}
+.taiwan12.swiper-pre,
+.taiwan12.swiper-next {
+  width: 36px;
+  height: 36px;
+}
+.taiwan12.flower-icon {
+  width: 200px;
+  > img {
+    width: 100%;
+  }
+}
+.taiwan12.change-page {
+  // padding: 0 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.taiwan12.change-page-button {
+  font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+  padding: 15px;
+}
+.taiwan12.change-page-button-container {
+  display: flex;
+  justify-content: center;
+}
+.taiwan12.change-page-border-button {
+  font-weight: 700;
+  font-size: 16px;
+  // padding: 20px 35px;
+  width: 100px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #fff;
+  color: #fff;
+  border-radius: 20px;
+  line-height: 1;
+  margin-top: 40px;
+}
+.taiwan12.change-page-line {
+  padding-top: 20px;
+  border-bottom: solid 1px #fff;
+  width: 100%;
+}
+.taiwan12.tabs-page {
+  padding-top: 20px;
+  animation-name: room-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes room-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }

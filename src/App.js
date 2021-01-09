@@ -1,48 +1,73 @@
-import React,{ useEffect } from "react";
-import { Router, Route, hashHistory } from 'react-router'
-import { BrowserRouter, Switch, Link } from 'react-router-dom';
-import  Box from "./Component/Box";
+import React, { useEffect, useState } from 'react';
+import Tabs from './Component/Tabs';
+import Swiper from './Component/Swiper';
+import { Route } from 'react-router';
+import Box from './Component/Box';
 import './test.scss';
 
-const allFlower = require('./data.json')
+const allFlower = require('./data.json');
 
-function App() {
-  const flowerArr = allFlower.flower
-  useEffect(()=>{
-    window.addEventListener('click',()=>{
-      if(window.location.pathname!=='/taiwan12flower'){
-        window.location.href='/taiwan12flower'
-      }
-    })
-  },[])
+const App = () => {
+  const flowerArr = allFlower.flower;
+  const [modal, setModal] = useState(false);
+  const [flower, setFlower] = useState(0);
+  const [prePageFunc, setPrePageFunc] = useState(true);
+
+  console.log(flower);
+  useEffect(() => {
+    const params = new URL(window.location.href).searchParams;
+    const flowerDefault = params.get('flower');
+    if (flowerDefault) {
+      setFlower(Number(flowerDefault));
+      setPrePageFunc(false);
+      setModal(true);
+    }
+  }, []);
+  const clickFunc = () => {
+    const dom = document.querySelector('.taiwan12flower-box.box');
+    if (dom) {
+      const stateObj = { modal: false };
+      window.history.replaceState(stateObj, '', '/taiwan12flower/information');
+      // dom.classList.add('close');
+      setModal(false);
+      // setTimeout(() => {
+      // }, 300);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener('click', () => {
+      clickFunc();
+    });
+    return () => {
+      window.removeEventListener('click', () => {
+        clickFunc();
+      });
+    };
+  }, []);
+
   return (
-    <div className="taiwan12flower">
-      <h1 className='taiwan12 title'>TAIWAN FLOWER</h1>
-      <div className='taiwan12 tabs'>
-        {flowerArr.map((item,key)=>{
-          return (
-            <Link onClick={(e)=>{e.stopPropagation()}} className="taiwan12 tab-toggle" key={key} to={`/taiwan12flower/${key+1}`}>
-              <div className='taiwan12 flower-tab'>{item.name}</div>
-            </Link>
-          )
-        })}
-      </div>
-        <Route path="/taiwan12flower/1" render={(props) => <Box data={flowerArr[0]} {...props}/>} />
-        <Route path="/taiwan12flower/2" render={(props) => <Box data={flowerArr[0]} {...props}/>} />
-        <Route path="/taiwan12flower/3" render={(props) => <Box data={flowerArr[0]} {...props}/>} />
-        <Route path="/taiwan12flower/4" render={(props) => <Box data={flowerArr[0]} {...props}/>} />
-        <Route path="/taiwan12flower/5" render={(props) => <Box data={flowerArr[0]} {...props}/>} />
-        <Route path="/taiwan12flower/6" render={(props) => <Box data={flowerArr[0]} {...props}/>} />
-        <Route path="/taiwan12flower/7" render={(props) => <Box data={flowerArr[0]} {...props}/>} />
-        <Route path="/taiwan12flower/8" render={(props) => <Box data={flowerArr[0]} {...props}/>} />
-        <Route path="/taiwan12flower/9" render={(props) => <Box data={flowerArr[0]} {...props}/>} />
-        <Route path="/taiwan12flower/10" render={(props) => <Box data={flowerArr[0]} {...props}/>} />
-        <Route path="/taiwan12flower/11" render={(props) => <Box data={flowerArr[0]} {...props}/>} />
-        <Route path="/taiwan12flower/12" render={(props) => <Box data={flowerArr[0]} {...props}/>} />
-        {/* <Route path="/2" component={Box} />
-        <Route path="/3" component={Box} /> */}
+    <div className={`taiwan12flower ${modal ? 'modal' : ''}`}>
+      <h1 className="taiwan12 title en-style fade-in-animation">TAIWAN FLOWER</h1>
+      <Route
+        path="/taiwan12flower/map"
+        render={(props) => <Tabs flowerArr={flowerArr} setFlower={setFlower} {...props} />}
+      />
+      <Route
+        path="/taiwan12flower/information"
+        render={(props) => (
+          <Swiper
+            flowerArr={flowerArr}
+            flower={flower}
+            setFlower={setFlower}
+            setModal={setModal}
+            {...props}
+            modal={modal}
+          />
+        )}
+      />
+      {modal && <Box data={flowerArr[flower]} flower={flower} closeModal={clickFunc} />}
     </div>
   );
-}
+};
 
 export default App;

@@ -1,40 +1,208 @@
 {
-    "flower":[
-        {
-            "name":"布勒德藤"
-        },
-        {
-            "name":"布勒德藤"
-        },
-        {
-            "name":"布勒德藤"
-        },
-        {
-            "name":"布勒德藤"
-        },
-        {
-            "name":"布勒德藤"
-        },
-        {
-            "name":"布勒德藤"
-        },
-        {
-            "name":"布勒德藤"
-        },
-        {
-            "name":"布勒德藤"
-        },
-        {
-            "name":"布勒德藤"
-        },
-        {
-            "name":"布勒德藤"
-        },
-        {
-            "name":"布勒德藤"
-        },
-        {
-            "name":"布勒德藤"
-        }
-    ]
+  "flower": [
+    {
+      "name": "布勒德藤",
+      "start": 10,
+      "end": 1,
+      "position": "left",
+      "mainSName": "Bredia hirsuta Blume var. scandens Ito & Matsumura",
+      "snameCn1": "科 ／ 野牡丹科",
+      "snameEn1": "Melastomataceae",
+      "snameCn2": "屬 ／ 金石榴屬",
+      "snameEn2": "Bredia",
+      "snameCn3": "色 ／ 白、粉",
+      "detail": "落葉直立或蔓性小灌木，枝幹上具有直毛。單葉對生，卵形，葉基心形，先端漸尖，二面均有毛。兩性花，繖狀圓錐花序頂生，花梗密被腺毛及多細胞毛；花萼4淺裂，花瓣4枚，淡粉色，雄蕊共8枚，4強4短；花柱特長，有如蟹腳。",
+      "height": 2000,
+      "low": 700,
+      "location": "分布於全島中低海拔森林中，邊坡、陡崖或溪谷旁較常見",
+      "season": "冬"
+    },
+    {
+      "name": "台灣胡麻花",
+      "start": 2,
+      "end": 5,
+      "position": "right",
+      "mainSName": "Heloniopsis umbellata Baker",
+      "snameCn1": "科 ／ 百合科",
+      "snameEn1": "Liliaceae",
+      "snameCn2": "屬 ／ 胡麻花屬",
+      "snameEn2": "Heloniopsis",
+      "snameCn3": "色 ／ 白、粉",
+      "detail": "多年生草本，地下走莖短小不明顯；葉基生，蓮座狀；兩性花，繖形花序，頂生，花被片6枚，基部有密腺；雄蕊6，與花被片基部聯生；子房上位，花柱單一，花2-20朵。蒴果，胞被開裂。",
+      "height": 1200,
+      "low": 700,
+      "location": "分布於全島低至中海拔森林，邊坡、陡崖或溪谷旁較常見",
+      "season": "冬"
+    },
+    {
+      "name": "蘭崁馬藍",
+      "start": 3,
+      "end": 4,
+      "position": "right",
+      "mainSName": "Strobilanthes rankanensis Hayata",
+      "snameCn1": "科 ／ 爵床科",
+      "snameEn1": "Acanthaceae",
+      "snameCn2": "屬 ／ 馬藍屬",
+      "snameEn2": "Strobilanthes",
+      "snameCn3": "色 ／ 藍，偶見白",
+      "detail": "草本，匍匐或平臥地上；葉對生，卵狀菱形或闊橢圓形，不明顯鋸齒緣。葉柄短，被剛毛；花單一葉生，看似頂生但非頂生。鐘形，向上彎曲，先端5裂，裂片約等大。雄蕊4枚2強，子房上位。花萼2深裂3淺裂，裂瓣線形，光滑或被剛毛，邊緣具纖毛。蒴果，種子4枚，橢圓形，被剛毛。",
+      "height": 2400,
+      "low": 1200,
+      "location": "主要分布於中部中海拔山區以及東部海岸山脈的潮濕森林中",
+      "season": "冬"
+    },
+    {
+      "name": "台灣百合",
+      "start": 4,
+      "end": 9,
+      "position": "right",
+      "mainSName": "Lilium formosanum",
+      "snameCn1": "科 ／ 百合科",
+      "snameEn1": "Liliaceae",
+      "snameCn2": "屬 ／ 百合屬 Lilium",
+      "snameEn2": "Lilium",
+      "snameCn3": "色 ／ 白，帶淡黃",
+      "detail": "多年生草本，葉呈線形至披針線形，兩面無毛；莖細長直挺且少有分枝；花冠下垂，呈現六角形喇叭狀，花被片先端反捲，外輪花被片倒披針形，內輪花被片匙形，蜜腺槽綠色；花絲扁平，近基部有細小突起；花藥矩圓形；子房圓柱形；花柱無毛，柱頭膨大，3裂。蒴果直立，圓柱形。",
+      "height": 3000,
+      "low": 0,
+      "location": "分佈台灣各地，適應性強，南從屏東北至東北角風景區沿海及各小島，具多種族群形態",
+      "season": "春"
+    },
+    {
+      "name": "玉山櫻草",
+      "start": 5,
+      "end": 6,
+      "position": "right",
+      "mainSName": "Primula miyabeana Ito &Kawakami",
+      "snameCn1": "科 ／ 櫻草科",
+      "snameEn1": "Primulaceae",
+      "snameCn2": "屬 ／ 櫻草屬",
+      "snameEn2": "Primula",
+      "snameCn3": "色 ／ 白、粉",
+      "detail": "多年生草本，根莖短且粗厚。葉基生，無毛，匙形，先端鈍圓，三角狀齒緣至細鋸齒緣。花多數，頂生，繖形或塔狀繖形，稀單生；苞片為線形；花冠呈筒形下垂狀，花瓣有不明顯鋸齒；果橢圓形，花柱宿存。",
+      "height": 3900,
+      "low": 2700,
+      "location": "特產臺灣海拔3000公尺左右高山，常見陽光充足但潮濕處，尤其喜生土壤深厚的地方",
+      "season": "春"
+    },
+    {
+      "name": "玉山佛甲草",
+      "start": 6,
+      "end": 8,
+      "position": "right",
+      "mainSName": "Bredia hirsuta Blume var. scandens Ito & Matsumura",
+      "snameCn1": "科 ／ 野牡丹科",
+      "snameEn1": "Melastomataceae",
+      "snameCn2": "屬 ／ 金石榴屬",
+      "snameEn2": "Bredia",
+      "snameCn3": "色 ／ 白、粉",
+      "detail": "",
+      "height": 3950,
+      "low": 2500,
+      "location": "",
+      "season": "冬"
+    },
+    {
+      "name": "高山倒提壺",
+      "start": 7,
+      "end": 9,
+      "position": "right",
+      "mainSName": "Bredia hirsuta Blume var. scandens Ito & Matsumura",
+      "snameCn1": "科 ／ 野牡丹科",
+      "snameEn1": "Melastomataceae",
+      "snameCn2": "屬 ／ 金石榴屬",
+      "snameEn2": "Bredia",
+      "snameCn3": "色 ／ 白、粉",
+      "detail": "",
+      "height": 3700,
+      "low": 3500,
+      "location": "",
+      "season": "夏"
+    },
+    {
+      "name": "蓬萊毛茛",
+      "start": 6,
+      "end": 8,
+      "position": "left",
+      "mainSName": "Bredia hirsuta Blume var. scandens Ito & Matsumura",
+      "snameCn1": "科 ／ 野牡丹科",
+      "snameEn1": "Melastomataceae",
+      "snameCn2": "屬 ／ 金石榴屬",
+      "snameEn2": "Bredia",
+      "snameCn3": "色 ／ 白、粉",
+      "detail": "",
+      "height": 3700,
+      "low": 3500,
+      "location": "",
+      "season": "夏"
+    },
+    {
+      "name": "阿里山龍膽",
+      "start": 5,
+      "end": 9,
+      "position": "left",
+      "mainSName": "Bredia hirsuta Blume var. scandens Ito & Matsumura",
+      "snameCn1": "科 ／ 野牡丹科",
+      "snameEn1": "Melastomataceae",
+      "snameCn2": "屬 ／ 金石榴屬",
+      "snameEn2": "Bredia",
+      "snameCn3": "色 ／ 白、粉",
+      "detail": "",
+      "height": 3500,
+      "low": 2300,
+      "location": "",
+      "season": "秋"
+    },
+    {
+      "name": "高山當藥",
+      "start": 8,
+      "end": 10,
+      "position": "left",
+      "mainSName": "Bredia hirsuta Blume var. scandens Ito & Matsumura",
+      "snameCn1": "科 ／ 野牡丹科",
+      "snameEn1": "Melastomataceae",
+      "snameCn2": "屬 ／ 金石榴屬",
+      "snameEn2": "Bredia",
+      "snameCn3": "色 ／ 白、粉",
+      "detail": "",
+      "height": 3000,
+      "low": 1700,
+      "location": "",
+      "season": "冬"
+    },
+    {
+      "name": "下花細辛",
+      "start": 11,
+      "end": 3,
+      "position": "right",
+      "mainSName": "Bredia hirsuta Blume var. scandens Ito & Matsumura",
+      "snameCn1": "科 ／ 野牡丹科",
+      "snameEn1": "Melastomataceae",
+      "snameCn2": "屬 ／ 金石榴屬",
+      "snameEn2": "Bredia",
+      "snameCn3": "色 ／ 白、粉",
+      "detail": "",
+      "height": 2000,
+      "low": 1000,
+      "location": "",
+      "season": "秋"
+    },
+    {
+      "name": "鵝鑾鼻決明",
+      "start": 9,
+      "end": 12,
+      "position": "left",
+      "mainSName": "Bredia hirsuta Blume var. scandens Ito & Matsumura",
+      "snameCn1": "科 ／ 野牡丹科",
+      "snameEn1": "Melastomataceae",
+      "snameCn2": "屬 ／ 金石榴屬",
+      "snameEn2": "Bredia",
+      "snameCn3": "色 ／ 白、粉",
+      "detail": "",
+      "height": 2000,
+      "low": 1000,
+      "location": "",
+      "season": "冬"
+    }
+  ]
 }

@@ -1,28 +1,39 @@
-import React,{ useEffect } from "react";
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import '../test.scss';
 
-const allFlower = require('../data.json')
-
-function Tabs() {
-  const flowerArr = allFlower.flower
-  useEffect(()=>{
-    console.log(flowerArr)
-  },[])
+const Tabs = (props) => {
+  const { flowerArr, setFlower } = props;
   return (
-    <div className="taiwan12flower">
-      <h1 className='taiwan12 title'>TAIWAN FLOWER</h1>
-      <div className='taiwan12 tabs'>
-        {flowerArr.map((item,key)=>{
+    <div className="taiwan12 tabs-page">
+      <div className="taiwan12 tabs">
+        {flowerArr.map((item, key) => {
           return (
-            <Link className="taiwan12 tab-toggle" to={`/taiwan12flower/${key}`}>
-              <div className='taiwan12 flower-tab' key={key}>{item.name}</div>
-            </Link>
-          )
+            <div
+              onClick={(e) => {
+                e.stopPropagation();
+                setFlower(key);
+              }}
+              className="taiwan12 tab-toggle"
+              key={key}
+            >
+              <div className="taiwan12 flower-tab">{item.name}</div>
+            </div>
+          );
         })}
+      </div>
+      <div className="taiwan12 change-page-button-container">
+        <Link
+          onClick={(e) => {
+            e.stopPropagation();
+          }}
+          // className="taiwan12 change-page-button-container"
+          to="/taiwan12flower/information"
+        >
+          <div className="taiwan12 change-page-border-button">X</div>
+        </Link>
       </div>
     </div>
   );
-}
+};
 
 export default Tabs;
