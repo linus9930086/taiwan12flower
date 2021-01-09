@@ -8,6 +8,8 @@ import './test.scss';
 const allFlower = require('./data.json');
 
 const App = () => {
+  console.log('process.env.PUBLIC_URL', process.env.PUBLIC_URL);
+
   const flowerArr = allFlower.flower;
   const [modal, setModal] = useState(false);
   const [flower, setFlower] = useState(0);
