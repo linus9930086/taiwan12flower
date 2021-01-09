@@ -26,7 +26,7 @@ const Swiper = (props) => {
   };
   const openModal = () => {
     const stateObj = { modal: 'bar' };
-    window.history.replaceState(stateObj, '', `?flower=${flower}`);
+    window.history.replaceState(stateObj, '', `#/information?flower=${flower}`);
     setModal(true);
   };
   return (

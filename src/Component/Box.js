@@ -44,13 +44,13 @@ const Box = (props) => {
               <div className="taiwan12flower-box month">
                 <span className="taiwan12flower-box m en-style">{start}</span>
               </div>
-              <div className="taiwan12flower-box month last">
+              <div className="taiwan12flower-box month last fade-in">
                 <span className="taiwan12flower-box m en-style">{end}</span>
               </div>
-              <div className={`taiwan12flower-box month-bottom ${s ? 's' : ''}`}>
+              <div className={`taiwan12flower-box month-bottom fade-in ${s ? 's' : ''}`}>
                 <div />
               </div>
-              <div className="taiwan12flower-box month-text">／ 花期 ／</div>
+              <div className="taiwan12flower-box month-text fade-in">／ 花期 ／</div>
             </div>
           </div>
         ) : (
@@ -59,13 +59,13 @@ const Box = (props) => {
               <div className="taiwan12flower-box month re">
                 <span className="taiwan12flower-box m en-style re">{end}</span>
               </div>
-              <div className="taiwan12flower-box month last re">
+              <div className="taiwan12flower-box month last re fade-in">
                 <span className="taiwan12flower-box m en-style re">{start}</span>
               </div>
-              <div className={`taiwan12flower-box month-bottom re ${s ? 's' : ''}`}>
+              <div className={`taiwan12flower-box month-bottom re fade-in ${s ? 's' : ''}`}>
                 <div />
               </div>
-              <div className="taiwan12flower-box month-text re">／ 花期 ／</div>
+              <div className="taiwan12flower-box month-text re fade-in">／ 花期 ／</div>
             </div>
           </div>
         )}

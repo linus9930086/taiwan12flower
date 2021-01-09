@@ -6,7 +6,7 @@
 }
 .fade-in {
   animation-name: room-in;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
 }
 .taiwan12flower-box.box {
   position: relative;
@@ -41,7 +41,8 @@
   &.last {
     position: absolute;
     right: 0;
-    opacity: 0.6;
+    color: #c3c6c5;
+    // opacity: 0.6;
   }
   &.last.re {
     position: absolute;
@@ -52,21 +53,21 @@
 .taiwan12flower-box.month-bottom {
   position: absolute;
   // width: 50%;
-  width: calc(50% - 6px);
+  width: calc(50% - 12px);
   border-bottom: solid 2px #fff;
   bottom: -6px;
-  right: 6px;
-  &.s {
-    width: calc(50% - 12px);
-    right: 12px;
-  }
+  right: 12px;
+  // &.s {
+  //   width: calc(50% - 12px);
+  //   right: 12px;
+  // }
   &.re {
     right: unset;
-    left: 6px;
-  }
-  &.re.s {
     left: 12px;
   }
+  // &.re.s {
+  //   left: 12px;
+  // }
   > div:before {
     content: '';
     position: absolute;
@@ -211,18 +212,18 @@
   line-height: 1.8;
 }
 @keyframes room-in {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
-    opacity: 100%;
+  100% {
+    opacity: 1;
   }
 }
-@keyframes room-out {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 0;
-  }
-}
+// @keyframes room-out {
+//   0% {
+//     opacity: 100%;
+//   }
+//   100% {
+//     opacity: 0;
+//   }
+// }

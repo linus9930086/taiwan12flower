@@ -6,6 +6,7 @@ import Box from './Component/Box';
 import './test.scss';
 
 const allFlower = require('./data.json');
+const R = require('ramda');
 
 const App = () => {
   console.log('process.env.PUBLIC_URL', process.env.PUBLIC_URL);
@@ -13,23 +14,27 @@ const App = () => {
   const flowerArr = allFlower.flower;
   const [modal, setModal] = useState(false);
   const [flower, setFlower] = useState(0);
-  const [prePageFunc, setPrePageFunc] = useState(true);
 
   console.log(flower);
   useEffect(() => {
-    const params = new URL(window.location.href).searchParams;
-    const flowerDefault = params.get('flower');
-    if (flowerDefault) {
-      setFlower(Number(flowerDefault));
-      setPrePageFunc(false);
+    console.log(window.location);
+    const hash = window.location.hash;
+    if (R.includes('?flower', hash)) {
+      setFlower(Number(hash[hash.length - 1]));
       setModal(true);
     }
+    // const params = new URL(window.location.href).searchParams;
+    // const flowerDefault = params.get('flower');
+    // if (flowerDefault) {
+    //   setFlower(Number(flowerDefault));
+    //   setModal(true);
+    // }
   }, []);
   const clickFunc = () => {
     const dom = document.querySelector('.taiwan12flower-box.box');
     if (dom) {
       const stateObj = { modal: false };
-      window.history.replaceState(stateObj, '', '/taiwan12flower/information');
+      window.history.replaceState(stateObj, '', '/taiwan12flower/#/information');
       // dom.classList.add('close');
       setModal(false);
       // setTimeout(() => {
@@ -49,7 +54,7 @@ const App = () => {
 
   return (
     <div className={`taiwan12flower ${modal ? 'modal' : ''}`}>
-      <h1 className="taiwan12 title en-style fade-in">TAIWAN FLOWER</h1>
+      <h1 className="taiwan12 title en-style">TAIWAN FLOWER</h1>
       <Route
         basename={process.env.PUBLIC_URL}
         path="/map"
