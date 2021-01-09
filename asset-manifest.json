@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/taiwan12flower/static/css/main.0e88250b.chunk.css",
-    "main.js": "/taiwan12flower/static/js/main.c1561c11.chunk.js",
-    "main.js.map": "/taiwan12flower/static/js/main.c1561c11.chunk.js.map",
+    "main.css": "/taiwan12flower/static/css/main.bc41579c.chunk.css",
+    "main.js": "/taiwan12flower/static/js/main.b4f2e868.chunk.js",
+    "main.js.map": "/taiwan12flower/static/js/main.b4f2e868.chunk.js.map",
     "runtime-main.js": "/taiwan12flower/static/js/runtime-main.5efb799f.js",
     "runtime-main.js.map": "/taiwan12flower/static/js/runtime-main.5efb799f.js.map",
     "static/js/2.826bd8bf.chunk.js": "/taiwan12flower/static/js/2.826bd8bf.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.849d82d4.chunk.js": "/taiwan12flower/static/js/3.849d82d4.chunk.js",
     "static/js/3.849d82d4.chunk.js.map": "/taiwan12flower/static/js/3.849d82d4.chunk.js.map",
     "index.html": "/taiwan12flower/index.html",
-    "static/css/main.0e88250b.chunk.css.map": "/taiwan12flower/static/css/main.0e88250b.chunk.css.map",
+    "static/css/main.bc41579c.chunk.css.map": "/taiwan12flower/static/css/main.bc41579c.chunk.css.map",
     "static/js/2.826bd8bf.chunk.js.LICENSE.txt": "/taiwan12flower/static/js/2.826bd8bf.chunk.js.LICENSE.txt",
     "static/media/icon-02.ba4cf2e7.svg": "/taiwan12flower/static/media/icon-02.ba4cf2e7.svg",
     "static/media/pic-02.20f092d9.svg": "/taiwan12flower/static/media/pic-02.20f092d9.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.5efb799f.js",
     "static/js/2.826bd8bf.chunk.js",
-    "static/css/main.0e88250b.chunk.css",
-    "static/js/main.c1561c11.chunk.js"
+    "static/css/main.bc41579c.chunk.css",
+    "static/js/main.b4f2e868.chunk.js"
   ]
 }
