@@ -1,6 +1,6 @@
 {
-  "short_name": "taiwan12flower",
-  "name": "Taiwan 12 Flower",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/taiwan12flower/information",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
