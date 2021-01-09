@@ -37,7 +37,7 @@ const Swiper = (props) => {
             {flowerArr[flower].position === 'right' ? flowerArr[flower].start : flowerArr[flower].end}
           </div>
           <div className="taiwan12 flower-name">{flowerArr[flower].name}</div>
-          <div className="taiwan12 taiwan-12-swiper fade-in-animation">
+          <div className="taiwan12 taiwan-12-swiper fade-in">
             <div className="taiwan12 swiper-pre" onClick={pre}>
               <ChevronLeft />
             </div>
@@ -48,7 +48,7 @@ const Swiper = (props) => {
               <ChevronRight />
             </div>
           </div>
-          <div className="taiwan12 change-page fade-in-animation">
+          <div className="taiwan12 change-page fade-in">
             <div
               onClick={(e) => {
                 e.stopPropagation();
@@ -64,7 +64,7 @@ const Swiper = (props) => {
                 e.stopPropagation();
               }}
               //   className="taiwan12 change-page-button-container"
-              to="/taiwan12flower/map"
+              to="/map"
             >
               <div className="taiwan12 change-page-border-button en-style">map</div>
             </Link>

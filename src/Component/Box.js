@@ -70,11 +70,11 @@ const Box = (props) => {
           </div>
         )}
         <div className="taiwan12flower-box name">{name}</div>
-        <div className="taiwan12flower-box main-img fade-in-animation">
+        <div className="taiwan12flower-box main-img fade-in">
           <Pic no={flower} />
         </div>
         {page === 0 && (
-          <div className="taiwan12flower-box context fade-in-animation">
+          <div className="taiwan12flower-box context fade-in">
             <div className="taiwan12flower-box context-one">
               <div className="taiwan12flower-box label">學名 ／</div>
               <p className="en-style">{mainSName}</p>
@@ -112,7 +112,7 @@ const Box = (props) => {
           </div>
         )}
         {page === 1 && (
-          <div className="taiwan12flower-box context fade-in-animation">
+          <div className="taiwan12flower-box context fade-in">
             <div className="taiwan12flower-box information-container">
               <div className="taiwan12flower-box bg" />
               <div className="taiwan12flower-box left">

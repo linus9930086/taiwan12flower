@@ -85,18 +85,12 @@ p {
   letter-spacing: 15px;
   text-indent: 15px;
 }
-// .taiwan12.taiwan-12-swiper-container {
-//   animation-name: room-in;
-//   animation-duration: 0.3s;
-//   animation-fill-mode: forwards;
-// }
 .taiwan12.taiwan-12-swiper {
   height: 280px;
   padding: 30px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // background: url('%PUBLIC_URL%/logo192.png');
 }
 .taiwan12.swiper-pre,
 .taiwan12.swiper-next {
@@ -150,7 +144,6 @@ p {
   padding-top: 20px;
   animation-name: room-in;
   animation-duration: 0.5s;
-  animation-fill-mode: forwards;
 }
 @keyframes room-in {
   from {

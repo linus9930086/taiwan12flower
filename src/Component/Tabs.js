@@ -27,7 +27,7 @@ const Tabs = (props) => {
             e.stopPropagation();
           }}
           // className="taiwan12 change-page-button-container"
-          to="/taiwan12flower/information"
+          to="/information"
         >
           <div className="taiwan12 change-page-border-button">X</div>
         </Link>

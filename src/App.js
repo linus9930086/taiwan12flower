@@ -49,13 +49,15 @@ const App = () => {
 
   return (
     <div className={`taiwan12flower ${modal ? 'modal' : ''}`}>
-      <h1 className="taiwan12 title en-style fade-in-animation">TAIWAN FLOWER</h1>
+      <h1 className="taiwan12 title en-style fade-in">TAIWAN FLOWER</h1>
       <Route
-        path="/taiwan12flower/map"
+        basename={process.env.PUBLIC_URL}
+        path="/map"
         render={(props) => <Tabs flowerArr={flowerArr} setFlower={setFlower} {...props} />}
       />
       <Route
-        path="/taiwan12flower/information"
+        basename={process.env.PUBLIC_URL}
+        path="/information"
         render={(props) => (
           <Swiper
             flowerArr={flowerArr}

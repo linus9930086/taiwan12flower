@@ -1,35 +1,22 @@
 .taiwan12flower-box.container {
-  // position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  // animation-name: room-in;
-  // animation-duration: 0.5s;
-  // animation-fill-mode: forwards;
-  // padding: 81px 15px 0 15px;
-  // overflow: auto;
 }
-.fade-in-animation {
+.fade-in {
   animation-name: room-in;
   animation-duration: 0.5s;
-  animation-fill-mode: forwards;
 }
 .taiwan12flower-box.box {
   position: relative;
   width: 100%;
   min-height: 500px;
   border-radius: 5px;
-  // padding: 25px 0;
-  // background: rgba(255, 255, 255, 0.9);
-  // animation-name: room-in;
-  // animation-duration: 0.5s;
-  // animation-fill-mode: forwards;
-  &.close {
-    animation-name: room-out;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-  }
+  // &.close {
+  //   animation-name: room-out;
+  //   animation-duration: 0.5s;
+  // }
 }
 .taiwan12flower-box.time-line {
   padding: 0 20px;
@@ -50,7 +37,7 @@
   font-weight: bolder;
   // width: 40%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   &.last {
     position: absolute;
     right: 0;
