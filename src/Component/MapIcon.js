@@ -1,18 +1,18 @@
 import React from 'react';
-import Icon01 from '../Img/icon-01.svg';
-import Icon02 from '../Img/icon-02.svg';
-import Icon03 from '../Img/icon-03.svg';
-import Icon04 from '../Img/icon-04.svg';
-import Icon05 from '../Img/icon-05.svg';
-import Icon06 from '../Img/icon-06.svg';
-import Icon07 from '../Img/icon-07.svg';
-import Icon08 from '../Img/icon-08.svg';
-import Icon09 from '../Img/icon-09.svg';
-import Icon10 from '../Img/icon-10.svg';
-import Icon11 from '../Img/icon-11.svg';
-import Icon12 from '../Img/icon-12.svg';
+import Icon01 from '../Img/map-01.svg';
+import Icon02 from '../Img/map-02.svg';
+import Icon03 from '../Img/map-03.svg';
+import Icon04 from '../Img/map-04.svg';
+import Icon05 from '../Img/map-05.svg';
+import Icon06 from '../Img/map-06.svg';
+import Icon07 from '../Img/map-07.svg';
+import Icon08 from '../Img/map-08.svg';
+import Icon09 from '../Img/map-09.svg';
+import Icon10 from '../Img/map-10.svg';
+import Icon11 from '../Img/map-11.svg';
+import Icon12 from '../Img/map-12.svg';
 
-const FIcon = (props) => {
+const MapIcon = (props) => {
   const { no } = props;
   let img;
   switch (no) {
@@ -53,10 +53,10 @@ const FIcon = (props) => {
       img = <img src={Icon12} alt="main-img" />;
       break;
     default:
-      img = <img src={Icon02} alt="main-img" />;
+      img = <img src={Icon01} alt="main-img" />;
       break;
   }
   return img;
 };
 
-export default FIcon;
+export default MapIcon;

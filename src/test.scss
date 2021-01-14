@@ -12,12 +12,12 @@ p {
   font-family: 'MuseoModerno', cursive, 'Noto Sans TC', sans-serif;
 }
 .taiwan12flower {
-  background: #69716e;
+  background: #778483;
   min-height: 100vh;
   // min-height: 150vh;
   padding: 40px 30px;
   &.modal > .taiwan12.title {
-    border-bottom: solid 1px #69716e;
+    border-bottom: solid 1px #778483;
   }
 }
 
@@ -71,6 +71,12 @@ p {
   justify-content: center;
   border: solid 1px #fff;
   margin-bottom: 20px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+  &.active {
+    background: #fff;
+    color: #778483;
+  }
 }
 .taiwan12.flower-no {
   font-size: 24px;
@@ -134,7 +140,10 @@ p {
   color: #fff;
   border-radius: 20px;
   line-height: 1;
-  margin-top: 40px;
+  margin-top: 20px;
+  > img {
+    height: 16px;
+  }
 }
 .taiwan12.change-page-line {
   padding-top: 20px;

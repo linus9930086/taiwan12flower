@@ -24,9 +24,7 @@ const Box = (props) => {
     season,
   } = data;
   const [page, setPage] = useState(0);
-  console.log(data);
   const s = start > 9 || end > 9;
-  console.log('s', s);
   return (
     <div className="taiwan12flower-box container">
       <div

@@ -100,25 +100,29 @@
   text-indent: 15px;
 }
 .taiwan12flower-box.month-text {
+  width: calc(50% - 12px);
   position: absolute;
   right: 25%;
-  top: 10px;
-  margin-right: -31px;
+  top: 8px;
+  margin-right: calc(-25% + 12px);
   font-size: 14px;
+  display: flex;
+  justify-content: center;
   &.re {
     right: unset;
     margin-right: unset;
     left: 25%;
-    margin-left: -28px;
+    margin-left: calc(-25% + 12px);
   }
 }
 .taiwan12flower-box.context {
   line-height: 1.8;
   letter-spacing: 1px;
+  padding: 0 20px;
 }
 .taiwan12flower-box.close-button {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   transform: rotate(45deg);
   right: 0px;
@@ -126,6 +130,7 @@
 }
 .taiwan12flower-box.main-img {
   margin: 20px 0 10px;
+  padding: 0 20px;
 }
 .taiwan12flower-box.context-one {
   padding-bottom: 15px;
@@ -174,10 +179,10 @@
   align-items: center;
 }
 .taiwan12flower-box.bg {
-  height: 40px;
-  width: 110%;
-  margin-bottom: 30px;
-  background-color: aquamarine;
+  height: 30px;
+  width: 100%;
+  margin-bottom: 35px;
+  background-color: #eff098;
 }
 .taiwan12flower-box.left {
   position: absolute;
@@ -203,7 +208,7 @@
 .taiwan12flower-box.center-line-long {
   margin: 3px 0;
   height: 80px;
-  border-right: solid 1px #ccc;
+  border-right: solid 2px #fff;
 }
 .taiwan12flower-box.info-detail {
   // width: 50%;

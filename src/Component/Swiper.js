@@ -5,7 +5,13 @@ import { ChevronLeft, ChevronRight } from './icon';
 
 const Swiper = (props) => {
   const { flowerArr, flower, setFlower, setModal, modal } = props;
-  console.log('modal', modal);
+
+  useEffect(() => {
+    return () => {
+      setModal(false);
+    };
+  }, []);
+
   const pre = () => {
     let no = flower;
     if (flower > 0) {
